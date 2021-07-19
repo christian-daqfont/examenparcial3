@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperacion</title>
+    <link rel="stylesheet" href="recursos/css/bootstrap.min.css" />
+<link rel="stylesheet" href="recursos/css/venta.css" />
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="caja">
+          <h4>Ventas</h4>
+
+            <div class="form-group">
+              <label>Sucursal:</label>
+              <select class="form-control" id="sucursal">
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Cliente:</label>
+              <select class="form-control" id="cliente">
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label>Fecha:</label>
+              <input type="date" class="form-control" id="fecha" name="fecha">
+            </div>
+            <div class="form-group">
+              <label>Documento:</label>
+              <select class="form-control" id="tipodoc">
+                  <option>BOLETA</option>
+                  <option>FACTURA</option>
+              </select>
+            </div>
+             
+          <button onclick="crear()" class="btn btn-danger">Registrar</button>
+    
+          
+          </div>
+        
+        <div class = "container">
+            <table id="tablita" class="table table-dark custab">
+                <thead>
+                
+                    <tr>
+                        <th>ID</th>
+                        <th>Sucursal</th>
+                        <th>Cliente</th>
+                        <th>Fecha</th>
+                        <th>Documento</th>
+                        <th class="text-center">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+          </div>
+        </div>
+<script src="recursos/js/jquery.js"></script>
+<script src="recursos/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="recursos/js/ventas.js"></script>
+</body>
+</html>
